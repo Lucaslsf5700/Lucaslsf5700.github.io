@@ -1,0 +1,89 @@
+/* Cores inspiradas na sua logo */
+:root {
+    --azul-escuro: #0a3040;
+    --azul-medio: #1e546d;
+    --azul-claro: #7ec8e3;
+    --fundo: #f4f8fb;
+    --texto: #0a0a0a;
+    --branco: #ffffff;
+}
+
+/* Estilos gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: var(--fundo);
+    color: var(--texto);
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+    background: linear-gradient(135deg, var(--azul-escuro), var(--azul-medio));
+    color: var(--branco);
+}
+
+header .logo {
+    width: 120px;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+section {
+    padding: 40px 20px;
+    max-width: 1000px;
+    margin: auto;
+}
+
+h2 {
+    color: var(--azul-escuro);
+    margin-bottom: 20px;
+    border-left: 5px solid var(--azul-claro);
+    padding-left: 10px;
+}
+
+.projetos-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+}
+
+.projeto-card {
+    background: var(--branco);
+    border: 1px solid var(--azul-claro);
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.projeto-card a {
+    display: inline-block;
+    margin-top: 10px;
+    color: var(--azul-medio);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: var(--azul-escuro);
+    color: var(--branco);
+    margin-top: 30px;
+}
