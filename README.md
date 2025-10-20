@@ -1,2 +1,0 @@
-# lstech.github.io
-home
